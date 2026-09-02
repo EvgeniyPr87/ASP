@@ -1,0 +1,21 @@
+﻿@page "/Factorial"
+@rendermode InteractiveServer
+
+<h1>Factorial</h1>
+<input type="number" min="0" @bind="n"/>
+<h3>!=@f</h3>
+<button class="btn btn-primary" @onclick="Calculate">Calculate</button>
+
+@code {
+	int n = 0;
+	int f = 1;
+	void Calculate()
+	{
+		f = 1;
+		for(int i=1; i<=n; i++)
+		{
+			f *= i;
+		}
+	}
+
+}
