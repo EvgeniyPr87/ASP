@@ -1,0 +1,9 @@
+﻿@page "/Power"
+@rendermode InteractiveServer
+
+<h1>Power</h1>
+<input type="number" min="1" @bind="number"/>
+<input type="number" min="1" @bind="degree"/>
+<h3>@result</h3>
+<button class="btn btn-primary" @onclick= "CalculatePower">Result</button>
+
