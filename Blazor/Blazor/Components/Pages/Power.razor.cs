@@ -8,11 +8,13 @@ namespace Blazor.Components.Pages
         double result;
         void CalculatePower()
         {
-          result = Math.Pow(number, degree);
+            if (number == 0 && degree == 0) { result = 1; }
+            else
+            { result = Math.Pow(number, degree); }
         }
         void Reset()
         {
-            result = 0;
+            result = 1;
             number = 0;
             degree = 0;
         }
