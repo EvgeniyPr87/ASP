@@ -1,43 +1,43 @@
 ﻿@page "/TaskList"
 @rendermode InteractiveServer
-
+@using ToDoList
 
 <h3>TaskList</h3>
-
-<input type="text" @bind="description"/>
+<input type="text" @bind ="description"/>
 <button class="btn btn-primary" @onclick="AddTask">Добавить</button>
 
 <ul>
-	@foreach(TODO task in tasklist)
+	@foreach (var task in tasklist)
 	{
-		<input type="checkbox" @bind="@task.DONE"/>
-		<li>@task.Description</li>
+				<li>
+					<input type="checkbox" @bind="task.DONE" />
+					<span class="@(task.DONE ? "text-decoration-line-through" : "")">
+				@task.Description
+					</span>
+				</li>
 	}
-</ul>
+	</ul>
 
 @code {
+    private string description = "";
+    private List<TODO> tasklist = new List<TODO>();
 
-	string description = "";
-	List<TODO> tasklist = 
-	[
-	new TODO {Description="Полить цветы" },
-	new TODO {Description="Покормить кота",DONE=true },
-	new TODO {Description="Сходить в магазин", DONE=true }
+    protected override void OnInitialized()
+    {
+        tasklist = new List<TODO>
+        {
+            new TODO { Description = "Полить цветы" },
+            new TODO { Description = "Покормить кота", DONE = true },
+            new TODO { Description = "Сходить в магазин", DONE = true }
+        };
+    }
 
-	];
+    private void AddTask()
+    {
+        if (string.IsNullOrWhiteSpace(description))
+            return;
 
-	void AddTask()
-	{
-
-		if (string.IsNullOrEmpty(description) && !string.IsNullOrWhiteSpace(description))
-		{
-			TODO task = new TODO { Description = description };
-
-			if (tasklist.Contains(task)) return;
-
-			tasklist.Add(new TODO { Description = description });
-			description = "";
-		}
-	}
-
+        tasklist.Add(new TODO { Description = description.Trim() });
+        description = "";
+    }
 }
