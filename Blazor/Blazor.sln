@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor", "Blazor\Blazor.csproj", "{E53557A0-3785-44E0-BF17-778F55C01F9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoList.csproj", "{8DA96CBC-8AFE-4D50-9EE8-2284C3AED6FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E53557A0-3785-44E0-BF17-778F55C01F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E53557A0-3785-44E0-BF17-778F55C01F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E53557A0-3785-44E0-BF17-778F55C01F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA96CBC-8AFE-4D50-9EE8-2284C3AED6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA96CBC-8AFE-4D50-9EE8-2284C3AED6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA96CBC-8AFE-4D50-9EE8-2284C3AED6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA96CBC-8AFE-4D50-9EE8-2284C3AED6FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
