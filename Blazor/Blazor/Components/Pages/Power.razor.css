@@ -1,4 +1,47 @@
-﻿.power h1
-{
-color:blue
+﻿body {
+    
+}
+.power-h5 {
+    font-size: 12px;
+    font-style: italic;
+    color: blue;
+}
+
+.power-title {
+    font-size: 32px;
+}
+
+.power-input {
+    font-size: 18px;
+    font-style:italic;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+
+.power-button {
+    background: #31abee;
+    text-align-last: center;
+    font-size: 18px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    padding: 2px 5px 2px 5px;
+}
+
+.power-button-reset {
+    background: #31abee;
+    text-align-last: center;
+    font-size: 18px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    padding: 2px 16px 2px 16px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.power-h3-result {
+    margin: 0px 0px 0px 0px;
+    font-size:24px;
+    font-style: italic;
 }

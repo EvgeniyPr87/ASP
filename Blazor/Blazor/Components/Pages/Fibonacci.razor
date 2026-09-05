@@ -1,20 +1,23 @@
 ﻿@page "/Fibonacci"
 @rendermode InteractiveServer
 
-<h1>Fibonacci</h1>
+<h1 class="fibonacci-title">Fibonacci</h1>
 
-<div>
+<div class="alert alert-primary">
 	<h3>Введите количество чисел:</h3>
-	<input type="number" min="1" max="50" @bind="num" @bind:after="FibCreate" />
+	<input class="fibonacci-input" type="number" min="1" max="30" @bind="num" @bind:event="oninput" />
+
+	<button class="fibonacci-button" @onclick="FibCreate"> Показать</button>
+	
 </div>
 
-<h3>Ряд Фибоначчи:</h3>
+<h3 class="fibonacci-h3-result" >Ряд Фибоначчи:</h3>
 @if(result!=null)
 {
-<div class="alert alert-info">
-	@string.Join(",",result)
+	<div class="alert alert-primary" >
+		
+				@string.Join(",", result)
+		
 </div>
 }
-@code {
 
-}

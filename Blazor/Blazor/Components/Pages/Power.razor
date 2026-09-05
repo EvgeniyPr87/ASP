@@ -1,9 +1,20 @@
 ﻿@page "/Power"
 @rendermode InteractiveServer
 
-<h1>Power</h1>
-<input type="number" min="1" @bind="number"/>
-<input type="number" min="1" @bind="degree"/>
-<h3>@result</h3>
-<button class="btn btn-primary" @onclick= "CalculatePower">Result</button>
+<h1 class="power-title">Power</h1>
+<div class="alert alert-primary">
+	<div>
+	<h5 class="power-h5">Введите число:</h5>
+<input class="power-input" type="number" min="1" @bind="number"/>
+	</div>
+	<div style="margin-top:20px">
+  <h5 class="power-h5">Степень:</h5>
+<input class="power-input" type="number" min="1" @bind="degree"/>
+	</div>
+</div>
+<div class="alert alert-primary">
+<h3 class="power-h3-result">@result</h3>
+</div>
+<button class="power-button" @onclick= "CalculatePower">Считать</button>
+<button class="power-button-reset" @onclick= "Reset">Сброс</button>
 

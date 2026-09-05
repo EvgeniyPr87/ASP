@@ -1,0 +1,43 @@
+﻿body {
+font-family:Rockwell;
+}
+.fibonacci-title
+{
+font-size:32px;
+
+}
+.fibonacci-input
+{
+font-size:18px;
+border:2px solid blue;
+border-radius:4px;
+
+}
+.fibonacci-button
+{
+background:#31abee;
+text-align-last:center;
+font-size:18px;
+border:2px solid blue;
+border-radius:4px;
+padding:2px 5px 2px 5px;
+}
+.fibonacci-button-off {
+    background:#808080;
+    text-align-last: center;
+    font-size: 18px;
+    color:aliceblue;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 2px 5px 2px 5px;
+}
+
+h3
+{
+    font-size:16px;
+}
+.fibonacci-h3-result
+{
+    margin: 10px 0px 0px 20px;
+    font-style:italic;
+}
